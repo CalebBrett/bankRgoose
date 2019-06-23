@@ -21,5 +21,15 @@ namespace Allowance
 		{
 			this.Close();
 		}
+
+		private void DoneBtn_Click(object sender, EventArgs e)
+		{
+			string task = TaskInput.Text + " \r\n";
+			string amount = AmountInput.Text + " \r\n";
+			OutputTask.Text += task;
+			OutputAmount.Text += amount;
+			TaskInput.Text = String.Empty;
+			AmountInput.Text = String.Empty;
+		}
 	}
 }
