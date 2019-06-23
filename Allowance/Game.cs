@@ -13,24 +13,25 @@ namespace Allowance
 	public partial class Game : Form
 	{
 
-		const int moveDistance = 5;
+		const int moveDistance = 50;
 
 		public Game()
 		{
 			InitializeComponent();
 			Money.Text = Global.Money.ToString() + "$";
-      
         }
 
 		private void Game_KeyPress(object sender, KeyPressEventArgs e)
 		{
-			if(e.KeyChar == 'p')
+            Money.Text = Global.Money.ToString() + "$";
+
+            if (e.KeyChar == 'p')
 			{
 				this.Close();
 			}
 			if(e.KeyChar == 'w')
 			{
-				if (player.Location.Y <= Bank.Location.Y + Bank.Height / 2 && isColliding(Bank))
+                if (player.Location.Y <= Bank.Location.Y + Bank.Height / 2 && isColliding(Bank))
 				{
 					Global.Building = "Bank";
 					buildingAction();
@@ -40,16 +41,23 @@ namespace Allowance
 					Global.Building = "House";
 					buildingAction();
 				}
-				if (player.Location.Y > Bank.Location.Y + Bank.Height/2)
+                else if (player.Location.Y <= Store.Location.Y + Store.Height / 2 && isColliding(Store))
+                {
+                    Global.Building = "Store";
+                    buildingAction();
+                }
+                if (player.Location.Y > Bank.Location.Y + Bank.Height/2)
 					player.Top -= moveDistance;
 			}
 			else if (e.KeyChar == 'd')
 			{
-				player.Left += moveDistance;
+                player.BackgroundImage = Allowance.Properties.Resources.goose_forward;
+                player.Left += moveDistance;
 			}
 			else if (e.KeyChar == 'a')
 			{
-				player.Left -= moveDistance;
+                player.BackgroundImage = Allowance.Properties.Resources.goose_backwards;
+                player.Left -= moveDistance;
 			}
 			else if (e.KeyChar == 's')
 			{
@@ -62,9 +70,10 @@ namespace Allowance
 			Scenario scenario = new Scenario();
 			scenario.Location = this.Location;
 			scenario.Show();
-		}
+            Money.Text = Global.Money.ToString() + "$";
+        }
 
-		private bool isColliding(PictureBox building)
+        private bool isColliding(PictureBox building)
 		{
 			if (player.Location.X > building.Location.X && player.Location.X < building.Location.X + building.Width)
 				return true;

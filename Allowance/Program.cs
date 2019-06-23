@@ -9,7 +9,7 @@ namespace Allowance
 
 	static class Global
 	{
-		private static int _money = 7000;
+		private static int _money = 100;
 
 		public static int Money
 		{
@@ -17,7 +17,31 @@ namespace Allowance
 			set { _money = value; }
 		}
 
-		private static string _building = "";
+        private static int _houseCount = 0;
+
+        public static int HouseCount
+        {
+            get { return _houseCount; }
+            set { _houseCount = value; }
+        }
+
+        private static int _bankCount = 0;
+
+        public static int BankCount
+        {
+            get { return _bankCount; }
+            set { _bankCount = value; }
+        }
+
+        private static int _storeCount = 0;
+
+        public static int StoreCount
+        {
+            get { return _storeCount; }
+            set { _storeCount = value; }
+        }
+
+        private static string _building = "";
 
 		public static string Building
 		{

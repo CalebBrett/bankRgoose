@@ -127,9 +127,6 @@
     <None Include="Resources\background final.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\goose forward.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\goose backwards.bmp" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\goose forward1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose backwards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose forward.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

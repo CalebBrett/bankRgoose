@@ -27,6 +27,7 @@ namespace Allowance
 		{
 			Game game = new Game();
 			game.Location = this.Location;
+            game.Size = this.Size;
 			game.Show();
 		}
 	}
