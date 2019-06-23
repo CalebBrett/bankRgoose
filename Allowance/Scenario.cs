@@ -19,57 +19,15 @@ namespace Allowance
 			InitializeComponent();
 			if(Global.Building == "House")          //QUESTION BELOW
             {
-                switch (Global.HouseCount)
-                {
-                    case 0:
-                        Question.Text = "You ran out of snacks! Where will you go to buy some more?\r\nA) Caleb's food emporium : $7\r\nB) Juliette's Convenience : $8\r\nC) James' Convenience : $5\r\nD) I don't know\r\n";
-                        break;
-                    case 1:
-                        Question.Text = "You're hungry for some candy, what will you choose?\r\nA) 1 for $3\r\nB) 2 for $4\r\nC) 3 for $5\r\nD) I don't know\r\n";
-                        break;
-                    case 2:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Eat out half of the week and buy groceries for the rest\r\nC) Just buy groceries and make your own food\r\nD) I don't know\r\n";
-                        break;
-                    default:
-                        break;
-                }
-                Global.HouseCount++;
+                Question.Text = "You ran out of snacks! Where will you go to buy some more?\r\nA) Caleb's food emporium : $7\r\nB) Juliette's Convenience : $8\r\nC) James' Store : $5\r\nD) Costco : $30\r\n";
             }
             if (Global.Building == "Bank")
             {
-                switch (Global.BankCount)
-                {
-                    case 0:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    case 1:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    case 2:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    default:
-                        break;
-                }
-                Global.BankCount++;
+                Question.Text = "Your friends ask you to go shopping and you need spending money; What do you decide?\r\nA) Take 50$ and spend it all.\r\nB) Take $20 and spend it all.\r\nC) Save your money and spend it later on something you want.\r\nD) Take $50 and split it between this week and next week.\r\n";
             }
             if (Global.Building == "Store")
             {
-                switch (Global.StoreCount)
-                {
-                    case 0:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    case 1:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    case 2:
-                        Question.Text = "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\nD) I don't know\r\n";
-                        break;
-                    default:
-                        break;
-                }
-                Global.StoreCount++;
+                Question.Text = "The video game you want just went on sale, but Mother's day is coming up.\r\nA)Buy the video game.\r\nB) Buy your Mother an extravagant gift.\r\nC)Without spending money, show appreciation in other ways.\r\nD)Take her out for brunch.\r\n";
             }
         }
 
@@ -101,62 +59,15 @@ namespace Allowance
             answer();
 		}
 
-		private void answer()                                   //ANSWERES BELOW
+		private void answer()
 		{
             if (answered)
 	    		this.Close();
             C.BackColor = Color.Lime;
-            if (Global.Building == "House")
-            {
-                switch (Global.HouseCount)
-                {
-                    case 0:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    case 1:
-                        Question.Text += " 3 for $5\r\n";
-                        break;
-                    case 2:
-                        Question.Text += " Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    default:
-                        break;
-                }
-            }
-            if (Global.Building == "Bank")
-            {
-                switch (Global.BankCount)
-                {
-                    case 0:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    case 1:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    case 2:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    default:
-                        break;
-                }
-            }
-            if (Global.Building == "Shop")
-            {
-                switch (Global.StoreCount)
-                {
-                    case 0:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    case 1:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    case 2:
-                        Question.Text += "You need food to eat for the week, which option would you choose?\r\nA) Eat out every day\r\nB) Just buy groceries and make your own food\r\nC) Eat out half of the week and buy groceries for the rest\r\n";
-                        break;
-                    default:
-                        break;
-                }
-            }
+            A.BackColor = Color.DarkRed;
+            B.BackColor = Color.DarkRed;
+            D.BackColor = Color.DarkRed;
+
             answered = true;
 		}
 	}

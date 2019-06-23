@@ -16,6 +16,7 @@ namespace Allowance
 		{
 			InitializeComponent();
 			Money.Text = Global.Money.ToString() + "$";
+            chores.Text = Global.Tasks;
 		}
 
 		private void backBtn_Click(object sender, EventArgs e)

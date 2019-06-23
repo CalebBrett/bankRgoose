@@ -25,10 +25,6 @@ namespace Allowance
 		{
             Money.Text = Global.Money.ToString() + "$";
 
-            if (e.KeyChar == 'p')
-			{
-				this.Close();
-			}
 			if(e.KeyChar == 'w')
 			{
                 if (player.Location.Y <= Bank.Location.Y + Bank.Height / 2 && isColliding(Bank))
@@ -69,8 +65,10 @@ namespace Allowance
 		{
 			Scenario scenario = new Scenario();
 			scenario.Location = this.Location;
-			scenario.Show();
+            scenario.Size = this.Size;
+            scenario.Show();
             Money.Text = Global.Money.ToString() + "$";
+            this.Close();
         }
 
         private bool isColliding(PictureBox building)

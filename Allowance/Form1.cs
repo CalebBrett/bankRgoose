@@ -21,13 +21,15 @@ namespace Allowance
 		{
 			ChildScreen childScreen = new ChildScreen();
 			childScreen.Location = this.Location;
-			childScreen.Show();
+            childScreen.Size = this.Size;
+            childScreen.Show();
 		}
 		private void parentBtn_Click(object sender, EventArgs e)
 		{
 			ParentScreen parentScreen = new ParentScreen();
 			parentScreen.Location = this.Location;
-			parentScreen.Show();
+            parentScreen.Size = this.Size;
+            parentScreen.Show();
 		}
 	}
 }

@@ -26,10 +26,18 @@ namespace Allowance
 		{
 			string task = TaskInput.Text + " \r\n";
 			string amount = AmountInput.Text + " \r\n";
-			OutputTask.Text += task;
+            Global.Tasks += task + amount;
+            OutputTask.Text += task;
 			OutputAmount.Text += amount;
 			TaskInput.Text = String.Empty;
 			AmountInput.Text = String.Empty;
 		}
-	}
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            OutputTask.Text = "";
+            OutputAmount.Text = "";
+            Global.Tasks = "";
+        }
+    }
 }
