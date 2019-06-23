@@ -34,10 +34,12 @@
             this.Bank = new System.Windows.Forms.PictureBox();
             this.House = new System.Windows.Forms.PictureBox();
             this.Store = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.House)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Store)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Money
@@ -45,7 +47,7 @@
             this.Money.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Money.BackColor = System.Drawing.Color.Transparent;
             this.Money.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Money.Location = new System.Drawing.Point(1007, 643);
+            this.Money.Location = new System.Drawing.Point(1007, 636);
             this.Money.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Money.Name = "Money";
             this.Money.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -59,7 +61,7 @@
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("player.BackgroundImage")));
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(68, 479);
+            this.player.Location = new System.Drawing.Point(68, 480);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(233, 247);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,10 +71,10 @@
             // Bank
             // 
             this.Bank.BackColor = System.Drawing.Color.Transparent;
-            this.Bank.Location = new System.Drawing.Point(578, 72);
+            this.Bank.Location = new System.Drawing.Point(603, 68);
             this.Bank.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Bank.Name = "Bank";
-            this.Bank.Size = new System.Drawing.Size(345, 364);
+            this.Bank.Size = new System.Drawing.Size(296, 364);
             this.Bank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Bank.TabIndex = 1;
             this.Bank.TabStop = false;
@@ -80,10 +82,10 @@
             // House
             // 
             this.House.BackColor = System.Drawing.Color.Transparent;
-            this.House.Location = new System.Drawing.Point(114, 72);
+            this.House.Location = new System.Drawing.Point(137, 138);
             this.House.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.House.Name = "House";
-            this.House.Size = new System.Drawing.Size(267, 364);
+            this.House.Size = new System.Drawing.Size(214, 294);
             this.House.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.House.TabIndex = 3;
             this.House.TabStop = false;
@@ -91,13 +93,23 @@
             // Store
             // 
             this.Store.BackColor = System.Drawing.Color.Transparent;
-            this.Store.Location = new System.Drawing.Point(1166, 141);
+            this.Store.Location = new System.Drawing.Point(1166, 138);
             this.Store.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Store.Name = "Store";
             this.Store.Size = new System.Drawing.Size(277, 295);
             this.Store.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Store.TabIndex = 6;
             this.Store.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Allowance.Properties.Resources.background;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1624, 784);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Game
             // 
@@ -112,6 +124,7 @@
             this.Controls.Add(this.House);
             this.Controls.Add(this.Bank);
             this.Controls.Add(this.Store);
+            this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -123,6 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Bank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.House)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Store)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -133,5 +147,6 @@
 		private System.Windows.Forms.Label Money;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox Store;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
