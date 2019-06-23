@@ -2,9 +2,9 @@ Scenarios:
 
 -Saving and spending money
 	You ran out of snacks! Where will you go to buy some more? 
-		- Store Caleb's food emporium : $7
-		- Store Juelliete's Convenience  : $5
-		- Store Jame's $8
+		- Caleb's food emporium : $7
+		- Juelliete's Convenience  : $5
+		- Jame's $8
 	You're hungry for some candy, what will you choose?
 		- 2 for $4  ($2 each)
 		- 3 for $5   ($1.67 each) this onebruoo
