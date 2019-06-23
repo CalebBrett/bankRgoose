@@ -1,14 +1,14 @@
 Scenarios: 
 
 -Saving and spending money
-	Buying food 
-		- Store A : $7
-		- Store B : $5
-		- Store D : $8
-	Candy Bar
-		- 2 for $4
-		- 3 for $5
-		- 1 for $3
+	You ran out of snacks! Where will you go to buy some more? 
+		- Store Caleb's food emporium : $7
+		- Store Juelliete's Convenience  : $5
+		- Store Jame's $8
+	You're hungry for some candy, what will you choose?
+		- 2 for $4  ($2 each)
+		- 3 for $5   ($1.67 each) this onebruoo
+		- 1 for $3  ($3 each)
 	Buying lunch vs making lunch for the week. 
 		- $30 dollars to eat out
 		- $20 dollars to eat out and groceries
@@ -18,14 +18,14 @@ Click on house buy food or groceries.
 
 
 	Buying or renting (Store)
-		you need it for ONLY 2 months video games.
-		- rent 1 month for $20 Twice
-		- rent 2 months for $50
-		- special deal rent 3 months for $45
+		You want to play the new Smash game. You need it for ONLY 2 months.
+		- rent 1 month for $15 Twice
+		- rent 2 months for $25
+		- Buy the game for $60
 
 
 -Banks
-	Need more $3
+	Oh nooo you need lunch money! what will you dooooooooo. 
 		- $5 pay back $7 next week.  (Good)
 		- $8 pay back $16 in two weeks (Bad you pay back double)
 		- Take $3 from mom (Stealing Bad)
