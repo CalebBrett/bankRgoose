@@ -118,10 +118,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Player.bmp" />
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.jpg" />
+    <None Include="Resources\background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background final.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose backwards.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goose forward1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

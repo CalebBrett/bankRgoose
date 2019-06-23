@@ -73,9 +73,29 @@ namespace Allowance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Player {
+        internal static System.Drawing.Bitmap goose_forward {
             get {
-                object obj = ResourceManager.GetObject("Player", resourceCulture);
+                object obj = ResourceManager.GetObject("goose forward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap player_left {
+            get {
+                object obj = ResourceManager.GetObject("player_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap player_right {
+            get {
+                object obj = ResourceManager.GetObject("player_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

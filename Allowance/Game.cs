@@ -13,13 +13,14 @@ namespace Allowance
 	public partial class Game : Form
 	{
 
-		const int moveDistance = 20;
+		const int moveDistance = 5;
 
 		public Game()
 		{
 			InitializeComponent();
 			Money.Text = Global.Money.ToString() + "$";
-		}
+      
+        }
 
 		private void Game_KeyPress(object sender, KeyPressEventArgs e)
 		{
