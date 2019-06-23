@@ -1,0 +1,14 @@
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\bin\Debug\Allowance.exe.config
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\bin\Debug\Allowance.exe
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\bin\Debug\Allowance.pdb
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.csprojAssemblyReference.cache
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.Form1.resources
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.Properties.Resources.resources
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.csproj.GenerateResource.cache
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.csproj.CoreCompileInputs.cache
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.exe
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.pdb
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.ChildScreen.resources
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.ParentScreen.resources
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.Game.resources
+C:\Users\Caleb\Desktop\Programming\Hackathons\Allowance\Allowance\obj\Debug\Allowance.Scenario.resources
