@@ -1,4 +1,5 @@
 # BankerGoose: EngHack 2019 Interac Best Design Winner
+**Created by James Bates, Juliette Rocco, Caleb Brett, and Mervin Li.** Checkout the [Devpost!](https://devpost.com/software/bankergoose)
 
 ## Inspiration
 The idea began from the Interac workshop where we were inspired to enhance the way children are introduced to money management / online banking. From here, we brainstormed multiple solutions and eventually decided a game would be the best way to tackle this problem.
